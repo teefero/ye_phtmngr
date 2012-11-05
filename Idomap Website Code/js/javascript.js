@@ -2,7 +2,7 @@ $(document).ready(function() {
       //$('#roundHolder').roundabout();
       //btnNext: ".next"
       //autoplay: true
-      
+      /*
       $('.roundabout-holder li')
 			.bind({
 				"reposition": function() {
@@ -19,7 +19,7 @@ $(document).ready(function() {
 				
 			//$(this).css('top', '0px');
 			})
-		
+		*/
 		$('.roundabout-holder').roundabout({
 			minScale: 0.7,
 			easing: 'easeOutExpo',
@@ -27,6 +27,7 @@ $(document).ready(function() {
 			btnStopAutoplay: ".stop",
 			btnNext: ".next",
 			btnPrev: ".prev",
+			enableDrag: true,
 			autoplay: true,
 			duration: 1600
 		});

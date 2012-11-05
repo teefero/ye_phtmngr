@@ -1,17 +1,25 @@
 body {
-	background-color: white;
+	background-color: #F5F5F5;
 	font-size: 25px;
 	font-family: 'Unica One', cursive;
+	height: auto;
+	width: auto;
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 10px 50px -6px black;
+	   -moz-box-shadow: 0 10px 50px -6px black;
+	        box-shadow: 0 10px 50px -6px black;
 }
 
 .signIn{
-	background-color: rgb(255,255,255);
-	position: static;
+	background-color: rgba(255,255,255, 0.6);
 	width: 1000px;
 	border: 1px dashed #b0c4de;
-	height: auto;
-	margin: 70px auto;
+	margin: 200px auto;
 	text-align: center;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
 }
 
 .submit{
@@ -53,9 +61,9 @@ ul, .roundabout-holder {
 	height: 5em;
 	width: 300px;
 	margin: -80px auto;
-	background-color: #ccc;
 	text-align: center;
 	cursor: pointer;
+	opacity: 0.9;
 }
 
 li.roundabout-in-focus {

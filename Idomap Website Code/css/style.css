@@ -1,3 +1,5 @@
+/* BASIC STYLE CHOICES */
+
 body {
 	background-color: #F5F5F5;
 	font-size: 25px;
@@ -7,17 +9,23 @@ body {
 	overflow: hidden;
 }
 
-h1
-{
+h1{
 	font-size: 3em;
 	color: #b0c4de;
 }
 
-.one-edge-shadow {
-	-webkit-box-shadow: 0 10px 50px -6px black;
-	   -moz-box-shadow: 0 10px 50px -6px black;
-	        box-shadow: 0 10px 50px -6px black;
+a{
+	color: #b0c4de;
+	text-align: center;
+	text-decoration: none;
 }
+
+a:hover{
+	color: #ddd;
+}
+
+/* ELEMENTS */
+
 
 .signIn{
 	background-color: rgba(255,255,255, 0.6);
@@ -31,8 +39,7 @@ h1
 	z-index: 1;
 }
 
-.register
-{
+.register{
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 0 25px 5px #999;
@@ -42,7 +49,55 @@ h1
 	padding: 50px 30px;
 }
 
-.button.bClose {
+
+.register>table>tbody>tr>td{
+	width: 200px;
+}
+
+.register{
+	display:none;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.logo{
+	width: 300px;
+	height: 300px;
+}
+
+#title
+{
+	width: 100%;
+	display: block;
+	font-size: 10em;
+	color: #000;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	z-index: 2;
+	font-family: 'Unica One', cursive;
+	text-decoration: bold;
+	line-height: 1em;
+}
+
+
+form input{
+	width: 200px;
+	height: 30px;
+}
+
+
+/* SHADOW */
+
+.one-edge-shadow{
+	-webkit-box-shadow: 0 10px 50px -6px black;
+	   -moz-box-shadow: 0 10px 50px -6px black;
+	        box-shadow: 0 10px 50px -6px black;
+}
+
+/* BUTTONS */
+
+.button.bClose{
 	border-radius: 7px 7px 7px 7px;
 	box-shadow: none;
 	font: bold 131% sans-serif;
@@ -67,55 +122,13 @@ h1
 	font-family: 'Unica One', cursive;
 }
 
-.register>table>tbody>tr>td
-{
-	width: 200px;
-}
-
-.register{
-	display:none;
-	text-align: center;
-	border-collapse: collapse;
-}
-
-form input{
-	width: 200px;
-	height: 30px;
-}
-
-a {
-	color: #b0c4de;
-	text-align: center;
-	text-decoration: none;
-}
-
-a:hover{
-	color: #ddd;
-}
-
 #signInPageButtons{
 	margin: 20px 0px;
 }
 
-.logo{
-	width: 300px;
-	height: 300px;
-}
 
-#title
-{
-	width: 100%;
-	display: block;
-	font-size: 10em;
-	color: #000;
-	position: relative;
-	top: 20px;
-	text-align: center;
-	z-index: 2;
-	font-family: 'Unica One', cursive;
-	text-decoration: bold;
-	line-height: 1em;
-}
+
+/* ROUNDABOUT */
 
 ul, .roundabout-holder {
 	list-style: none;

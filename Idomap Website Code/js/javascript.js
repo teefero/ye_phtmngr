@@ -26,8 +26,7 @@ $(document).ready(function() {
 		$('.roundabout-holder').roundabout({
 			minScale: 0.7,
 			easing: 'easeOutExpo',
-			btnStartAutoplay: ".play",
-			btnStopAutoplay: ".stop",
+			btnToggleAutoplay: ".control-play",
 			btnNext: ".next",
 			btnPrev: ".prev",
 			enableDrag: true,
@@ -38,17 +37,25 @@ $(document).ready(function() {
 
 window.onload = function() {
 
-		$('.play').click( function(){
-			console.log('clicked play');
-			$(this).removeClass('play').addClass('stop');
-			$(this).html("&#9689;");
+		$('.control-play').click( function(){
+			if ($(this).hasClass('on')){
+				console.log("was on");
+				$(this).removeClass('on');
+				$(this).html("&#9658;");
+			}
+			else{
+				console.log("wasn't on");
+				$(this).addClass('on');
+				$(this).html("&#9689;");
+			}
 		});
 		
-		$('.stop').click( function(){
+		/*
+		$('.control-stop').click( function(){
 			console.log('clicked stop');
 			$(this).removeClass('stop').addClass('play');
 			$(this).html("&#9658;");
-		});
+		});*/
 		
 		$('#goRegister').click(function() {
 			console.log("pressed register button");

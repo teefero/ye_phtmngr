@@ -46,6 +46,7 @@ a:hover{
 
 .register{
 	background-color: white;
+	border: 1px dashed #b0c4de;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 0 25px 5px #999;
 	color: #111;

@@ -13,15 +13,12 @@
 	<script src="js/jquery.event.drag.live-2.2.js"></script>
 	<script src="js/popbox.js"></script>
 	<script src="js/jquery.event.drop.live-2.2.js"></script>
-	<script src="js/jquery-bpopup.js"></script>
 	<script src="js/javascript.js"></script>	
-	
- <link href='http://fonts.googleapis.com/css?family=Nixie+One|Syncopate|Unica+One|Cedarville+Cursive|Homemade+Apple|Amatic+SC:400,700|Gruppo|Jura' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-	<span id="title">id&#246;map</span>
 	<div class="signIn one-edge-shadow">
 		<ul class="roundabout-holder">
 			<li class="roundable-moveable-item"><img src="img/bluefoglog.png" alt="Idomap logo" class="logo"/></li>
@@ -39,71 +36,26 @@
 			<br/><input type="text" name="userName" id="userName"/>
 			<br/><label for="password">Password:</label>
 			<br/><input type="password" name="password" id="password" autocomplete="off"/>
-			<br/><input class="button" type="submit" value="Sign in"/>
+			<br/><input type="submit" value="Sign in" class="submit"/>
 		</form>
 		</p>
 		<div id="signInPageButtons">
 			<a href="tutorial.html">Tutorial</a> | 
 			<a href="home.html">Skip to Home</a> | 
-			<a id="goRegister">Register</a>
+			<div class='popbox'>
+          		<a class='open' href='register.html'>Register</a>
+				<div class='collapse'>
+            		<div class='box'>
+					  <div class='arrow'></div>
+					  <div class='arrow-border'></div>
+					  
+					  <?php include("register.html"); ?>
+					  
+					  <a href="#" class="close">Close</a>
+					</div>
+				  </div>
+				</div>
 		</div>
-	</div>
-	
-	<div class='register'>
-		<h1>Register</h1>
-		<span class="button bClose"><span>X</span></span>
-		<table>
-		<form id="register" name="register" method="post">
-			<tr>
-				<td>Username:</td>
-				<td><input type="text" name="userName" id="userName"/></td>
-			</tr>
-			<tr>
-				<td>First Name:</td>
-				<td><input type="text" name="firstName" id="firstName"/></td>
-			</tr>
-			<tr>
-				<td>Last Name:</td>
-				<td><input type="text" name="lastName" id="lastName"/></td>
-			</tr>
-			<tr>
-				<td>Email:</td>
-				<td><input type="text" name="email" id="email"/></td>
-			</tr>
-			<tr>
-				<td>Password:</td>
-				<td><input type="password" name="password" id="password" autocomplete="off"/></td>
-			</tr>
-			<tr>
-				<td>Confirm Password:</td>
-				<td><input type="password" name="confirm" id="confirm" autocomplete="off"/></td>
-			</tr>
-				<td>Birthday:</td>
-				<td><input type="text" name="birthMonth" value="MM"/></td>
-			<tr>
-				<td>Sex:</td>
-				<td>
-					<select id="sex">
-						<option value="m">Male</option>
-						<option value="f">Female</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Privacy:</td>
-				<td>
-					<select id="privacy">
-						<option value="public">Public</option>
-						<option value="private">Private</option>
-					</select>
-				</td>
-			</tr>
-			<tr></tr>
-			<tr>
-				<td colspan="2"><input class="button" type="submit" value="Sign up"/></td>
-			</tr>
-		</form>
-		</table>
 	</div>
 </body>
 

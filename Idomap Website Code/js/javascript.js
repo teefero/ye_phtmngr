@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	  $('.popbox').popbox();
+		
       //$('#roundHolder').roundabout();
       //btnNext: ".next"
       //autoplay: true
@@ -45,5 +48,18 @@ window.onload = function() {
 			console.log('clicked stop');
 			$(this).removeClass('stop').addClass('play');
 			$(this).html("&#9658;");
+		});
+		
+		$('#goRegister').click(function() {
+			console.log("pressed register button");
+			$('.register').bPopup({
+				fadeSpeed: 'slow',
+				follow: [false, false], //x, y
+				position: [200, 200], //x, y
+				modalColor: 'black',
+				modalClose: false,
+            	opacity: 0.6,
+            	positionStyle: 'fixed'
+			});
 		});
 }

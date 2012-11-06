@@ -50,12 +50,27 @@ window.onload = function() {
 			}
 		});
 		
-		/*
-		$('.control-stop').click( function(){
-			console.log('clicked stop');
-			$(this).removeClass('stop').addClass('play');
-			$(this).html("&#9658;");
-		});*/
+		$('.button.menu').click( function(){
+			if ($('.signIn').hasClass('on')){
+				$('.signIn').fadeOut('slow', function(){
+						$(this).css('visibility', 'visible');
+					});
+					
+				$('.signIn').removeClass('on');
+				$('.info').addClass('on');
+			}
+			else{
+				$('.signIn').fadeIn('slow', function(){
+						$(this).css('visibility', 'hidden');
+					});
+				
+				/*$('.info').fadeOut('slow', function(){
+						$(this).css('visibility', 'hidden');
+					});*/
+				$('.info').removeClass('on');
+				$('.signIn').addClass('on');
+			}
+		});
 		
 		$('#goRegister').click(function() {
 			console.log("pressed register button");

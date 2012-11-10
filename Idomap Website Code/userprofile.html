@@ -3,6 +3,7 @@
 <head>
 	<title>Idomap</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
 	<link rel="stylesheet" type="text/css" href="css/popbox.css">
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 	<!--<script src="js/jquery.tools.min.js"></script>
@@ -14,7 +15,8 @@
 	<script src="js/jquery.event.drag.live-2.2.js"></script>
 	<script src="js/jquery.event.drop.live-2.2.js"></script>
 	<script src="js/jquery-bpopup.js"></script>
-	<script src="js/javascript.js"></script>	
+	<script src="js/javascript.js"></script>
+	<script src="js/timeliner.min.js"></script>	
  	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Syncopate|Unica+One|Cedarville+Cursive|Homemade+Apple|Amatic+SC:400,700|Gruppo|Jura' rel='stylesheet' type='text/css'>
 
 </head>
@@ -36,7 +38,7 @@
 			</li>
 		</ul>
 	</div>
-	<div id="userheader" class="one-edge-shadow">
+	<div id="userheader">
 		<span class="name">Ketetha Olengue</span>
 		<span class="tagline">16 and Pregnant, hehe</span>
 		<span class="view"><a href="">Timeline</a> | <a href="">Moments</a></span>
@@ -55,8 +57,49 @@
 		</div>
 		<br/>
 	</div>
-	<div class="timebox">
-		<span class="timeheader">2007</span>
-	</div>
+	<div id="timelineContainer">
+		<dl class="timelineMinor">
+			<dt id="event01"><a>2012</a></dt>
+			<dd class="timelineEvent" id="event01EX" style="display: none; ">
+				<p>
+					<ul class="roundabout-holder full">
+						<li class="roundable-moveable-item"><img src="img/bluefoglog.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 21 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/exampleIdo.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 22 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/bluefoglog.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 23 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/exampleIdo.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 24 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/bluefoglog.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 25 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/exampleIdo.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 26 2012</span></li>
+						<li class="roundable-moveable-item"><img src="img/bluefoglog.png" alt="Idomap logo" class="logo"/>
+							<span class="date">May, 27 2012</span></li>
+					</ul>
+				</p>
+			</dd><!-- /.timelineEvent -->
+		</dl><!-- /.timelineMinor -->
+		<dl class="timelineMinor">
+			<dt id="event02"><a>2011</a></dt>
+			<dd class="timelineEvent" id="event02EX" style="display: none; ">
+				<p>Timeline of 2011</p>
+			</dd><!-- /.timelineEvent -->
+		</dl><!-- /.timelineMinor -->
+		<dl class="timelineMinor">
+			<dt id="event03"><a>2010</a></dt>
+			<dd class="timelineEvent" id="event03EX" style="display: none; ">
+				<p>Timeline of 2010</p>
+			</dd><!-- /.timelineEvent -->
+		</dl><!-- /.timelineMinor -->
+	</div><!-- /#timelineContainer -->
+	
+	<span class="footer">
+		<a>About</a> | 
+		<a>Home</a> |
+		<a>Settings</a>
+	</span>
+
 </body>
 </html>

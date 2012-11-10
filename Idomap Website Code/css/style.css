@@ -52,7 +52,7 @@ a:hover{
 	max-height: 30px;
 	z-index: 2;
 	border-bottom: 1px dashed #BFAC98;
-	background-color: rgba(176, 196, 222, .8);
+	background-color: rgba(176, 196, 222, 1.0);
 }
 
 #navbar ul{
@@ -135,10 +135,12 @@ a:hover{
 	color: #000;
 	line-height: 15px;
 	border: 1px dashed #b0c4de;
+	/*
 	-moz-border-bottom-right-radius: 45px;
-	border-bottom-right-radius: 45px;
-	-moz-border-bottom-left-radius: 45px;
-	border-bottom-left-radius: 45px;
+	#border-bottom-right-radius: 45px;
+	#-moz-border-bottom-left-radius: 45px;
+	#border-bottom-left-radius: 45px;
+	*/
 }
 
 #infotable{
@@ -164,6 +166,15 @@ a:hover{
 	width: 100%;
 }
 
+.footer{
+	text-align: center!important;
+	font-size: 15px;
+}
+
+/*.footer a:after{
+	content: " / ";
+}
+*/
 .timebox{
 	position: static;
 	width: 100%;
@@ -183,13 +194,13 @@ a:hover{
 }
 
 .photo{
-	left: 500px;
+	right: 440px;
 }
 .following{
-	left: 690px;
+	right: 245px;
 }
 .follower{
-	left: 880px;
+	right: 50px;
 }
 
 .tagline{
@@ -363,6 +374,14 @@ ul.roundabout-holder {
 	height: 13em;
 }
 
+ul.roundabout-holder.full {
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
 li.roundabout-moveable-item {
 	position:absolute;
 	top: 0px;
@@ -374,11 +393,23 @@ li.roundabout-moveable-item {
 	opacity: 0.9;
 }
 
+li.roundabout-moveable-item span.date{
+	margin: 0;
+	padding: 0;
+	opacity: 0.1;
+}
+
 li.roundabout-in-focus {
 	position:absolute;
 	margin: -80px auto;
 	top: 0px;
 	cursor: default;
+}
+
+li.roundabout-in-focus span.date{
+	margin: 0;
+	padding: 0;
+	opacity: 1;
 }
 
 li span {

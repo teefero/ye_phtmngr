@@ -34,6 +34,7 @@ $(document).ready(function() {
 			duration: 1600
 		});
 		
+	
 		$("#register").validator();
 		
 		$(".register input[required='required']").after(" <span style='color:red'>*</span>");
@@ -42,6 +43,7 @@ $(document).ready(function() {
 
 window.onload = function() {
 
+		$.timeliner();
 		
 		$('.control-play').click( function(){
 			if ($(this).hasClass('on')){

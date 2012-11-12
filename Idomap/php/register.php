@@ -1,7 +1,7 @@
 <?php
-
+	echo 'hi';
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
-
+	
 	if (isset($_POST['firstName'])){
 		$first = $_POST['firstName'];
 		$last = $_POST['lastName'];

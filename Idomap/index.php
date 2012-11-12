@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<!--Last updated by Darius Clark on 11/1/2012-->
 <html>
 <head>
 	<title>Idomap</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/popbox.css">
-	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	<!--<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery-1.8.2.min.js"></script>-->
 	<script src="js/jquery.roundabout.min.js"></script>
 	<script src="js/jquery-easing.js"></script>
 	<script src="js/jquery.event.drag-2.2.js"></script>
 	<script src="js/jquery.event.drop-2.2.js"></script>
 	<script src="js/jquery.event.drag.live-2.2.js"></script>
-	<script src="js/popbox.js"></script>
 	<script src="js/jquery.event.drop.live-2.2.js"></script>
 	<script src="js/jquery-bpopup.js"></script>
 	<script src="js/javascript.js"></script>	
-	
- <link href='http://fonts.googleapis.com/css?family=Nixie+One|Syncopate|Unica+One|Cedarville+Cursive|Homemade+Apple|Amatic+SC:400,700|Gruppo|Jura' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Syncopate|Unica+One|Cedarville+Cursive|Homemade+Apple|Amatic+SC:400,700|Gruppo|Jura' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -54,14 +53,10 @@
 		<h1>Register</h1>
 		<span class="button bClose"><span>X</span></span>
 		<table>
-		<form id="register" name="register" method="post">
-			<tr>
-				<td>Username:</td>
-				<td><input type="text" name="userName" id="userName"/></td>
-			</tr>
+		<form id="register" name="register" method="post" action="php/register.php">
 			<tr>
 				<td>First Name:</td>
-				<td><input type="text" name="firstName" id="firstName"/></td>
+				<td><input type="text" name="firstName" id="firstName" required="required"/></td>
 			</tr>
 			<tr>
 				<td>Last Name:</td>
@@ -69,18 +64,18 @@
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><input type="text" name="email" id="email"/></td>
+				<td><input type="email" name="email" id="email" required="required"/></td>
 			</tr>
 			<tr>
 				<td>Password:</td>
-				<td><input type="password" name="password" id="password" autocomplete="off"/></td>
+				<td><input type="password" name="password" id="password" required="required" autocomplete="off"/></td>
 			</tr>
 			<tr>
 				<td>Confirm Password:</td>
-				<td><input type="password" name="confirm" id="confirm" autocomplete="off"/></td>
+				<td><input type="password" name="confirm" id="confirm" required="required" autocomplete="off"/></td>
 			</tr>
 				<td>Birthday:</td>
-				<td><input type="text" name="birthMonth" value="" placeholder="MM/DD/YYYY"/></td>
+				<td><input type="date" name="birthMonth" value="" placeholder="MM/DD/YYYY"/></td>
 			<tr>
 				<td>Sex:</td>
 				<td>

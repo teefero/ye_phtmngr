@@ -22,8 +22,16 @@
 	else
 		header('Location: ../Error.html');
 	
-	if ($hPass === $sPass)
-		header('Location: ../userprofile.php');
+	if ($hPass === $sPass){
+		$getID = $dbh->prepare("SELECT user_id FROM Users WHERE email=?");
+		if ($getID->execute(array($usr))){
+			$uID = $getID->fetchColumn(0);
+			$_SESSION['id'] = $uID;
+			header('Location: ../userprofile.php');
+		}
+		else
+			header('Location: ../Error.html');
+	}
 	else
 		header('Location: ../Error.html');
 	

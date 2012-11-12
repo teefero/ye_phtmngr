@@ -80,7 +80,7 @@
 			<tr>
 				<td>Sex:</td>
 				<td>
-					<select id="sex">
+					<select id="sex" name="sex">
 						<option value="m">Male</option>
 						<option value="f">Female</option>
 					</select>
@@ -89,7 +89,7 @@
 			<tr>
 				<td>Privacy:</td>
 				<td>
-					<select id="privacy">
+					<select id="privacy" name="privacy">
 						<option value="public">Public</option>
 						<option value="private">Private</option>
 					</select>

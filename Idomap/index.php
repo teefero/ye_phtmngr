@@ -10,6 +10,7 @@
 	<script src="js/jquery.roundabout.min.js"></script>
 	<script src="js/jquery-easing.js"></script>
 	<script src="js/jquery.event.drag-2.2.js"></script>
+	<script src="js/timeliner.min.js"></script>
 	<script src="js/jquery.event.drop-2.2.js"></script>
 	<script src="js/jquery.event.drag.live-2.2.js"></script>
 	<script src="js/jquery.event.drop.live-2.2.js"></script>

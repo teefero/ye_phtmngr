@@ -1,8 +1,7 @@
 <?php
 
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
-	
-	
+
 	if (isset($_POST['firstName'])){
 		$first = $_POST['firstName'];
 		$last = $_POST['lastName'];
@@ -13,7 +12,7 @@
 		$sex = $_POST['sex'];
 		$privacy = $_POST['privacy'];
 		
-		$salt = '$2a$13$'.substr(sha1($usrname),0,22); 
+		$salt = '$2a$13$'.substr(sha1($email),0,22); 
 		$hashed_pass = substr(crypt("$pass", $salt), 32);
 		
 		$id = time();
@@ -49,6 +48,8 @@
 		
 		//$dbh->close();
 	}
-
+	else{
+		echo 'hi hate you';
+	}
 	//header('Location: ../index.html');
 ?>

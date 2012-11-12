@@ -1,3 +1,30 @@
 <?php
-	header('Location: ../index.html');
+	session_start();
+	$usr = mysql_real_escape_string($_POST['userName']);
+	$pass = mysql_real_escape_string($_POST['password']);
+	echo $usr;
+	
+	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");	
+	$getSalt = $dbh->prepare("SELECT salt_password FROM Users WHERE email = ?");
+	
+	if ($getSalt->execute(array($usr))){
+		$salt = $getSalt->fetchColumn(0);
+	}
+	else
+		header('Location: ../Error.html');
+	
+	$hPass = substr(crypt("$pass", $salt),32);
+	
+	$getPass = $dbh->prepare("SELECT hash_password FROM Users WHERE email=?");
+	if ($getPass->execute(array($usr))){
+		$sPass = $getPass->fetchColumn(0);
+	}
+	else
+		header('Location: ../Error.html');
+	
+	if ($hPass === $sPass)
+		header('Location: ../userprofile.php');
+	else
+		header('Location: ../Error.html');
+	
 ?>

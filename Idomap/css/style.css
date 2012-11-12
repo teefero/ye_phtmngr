@@ -2,15 +2,30 @@
 
 body {
 	background-color: #F5F5F5;
+<<<<<<< HEAD
 	font-size: 25px;
 	font-family: 'Unica One', cursive;
 	height: auto;
 	width: auto;
 	overflow: hidden;
+=======
+	font-family: 'Unica One', cursive;
+	height: auto;
+	width: auto;
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 }
 
 h1{
 	font-size: 3em;
+<<<<<<< HEAD
+=======
+}
+h2{
+	font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 	color: #b0c4de;
 }
 
@@ -30,6 +45,10 @@ a:hover{
 .signIn{
 	background-color: rgba(255,255,255, 0.6);
 	width: 1000px;
+<<<<<<< HEAD
+=======
+	font-size: 25px;
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 	border: 1px dashed #b0c4de;
 	margin: 0px auto 200px;
 	text-align: center;
@@ -39,6 +58,222 @@ a:hover{
 	z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+#navbar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	max-height: 30px;
+	z-index: 2;
+	border-bottom: 1px dashed #BFAC98;
+	background-color: rgba(176, 196, 222, 1.0);
+}
+
+#navbar ul{
+	list-style:none;
+	margin: 0;
+	width: 100%;
+}
+
+#navbar li {
+	padding-top: 5px;
+	float: left;
+	border-right: 1px dashed #fff;
+	color: #fff;
+	height: 30px;
+}
+
+#navbar li.logo{
+	width: 10%;
+}
+
+#navbar li.search{
+	padding-top: 0px;
+	font-family: "Unica One", cursive;
+	font-size: 1em;
+	width: 60%;
+	text-align: right;
+}
+
+#navbar li.settings{
+	width: 20%;
+}
+
+.navsearch{
+	width: 400px;
+	height: 30px;
+	border: 0px;
+	padding: 0px;
+}
+
+#navbar li a{
+	color: black;
+	display: block;
+	background: rgba(255, 255, 255, .02);
+	padding: 0em 2em;
+	text-decoration: none;
+}
+
+#navbar li a:hover{
+	color: #fff;
+}
+
+#navbar li ul {
+	display: none;
+	position: absolute;
+	padding: 0;
+}
+
+#navbar li:hover ul{
+	display: block;
+}
+
+#navbar li li{
+	float: none;
+	background-color: rgba(176, 196, 222, .8);
+}
+
+#navbar li li a {
+	color: #fff;
+}
+
+#userheader{
+	top: 0;
+	left:0;
+	position: relative;
+	background-color: rgba(255,255,255, 0.6);
+	height: 80px;
+	font-size: 15px;
+	z-index: 1;
+	padding: 10px 25px 20px 25px;
+	color: #000;
+	line-height: 15px;
+	border: 1px dashed #b0c4de;
+	/*
+	-moz-border-bottom-right-radius: 45px;
+	#border-bottom-right-radius: 45px;
+	#-moz-border-bottom-left-radius: 45px;
+	#border-bottom-left-radius: 45px;
+	*/
+}
+
+#infotable{
+	text-align: center;
+	width: 100%;
+}
+
+.key{
+	position: absolute;
+	bottom: 60px;
+	text-align: center;
+	font-size: 15px;
+	color: #86786A;
+	width: 100%;
+}
+
+.num{
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
+	width: 100%;
+}
+
+.footer{
+	text-align: center!important;
+	font-size: 15px;
+}
+
+/*.footer a:after{
+	content: " / ";
+}
+*/
+.timebox{
+	position: static;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.timeheader{
+	border-bottom: 1px solid #ddd
+	}
+
+.infobox{
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(191,172,152, 0.4);	
+	width: 175px;
+	height: 60px;
+}
+
+.photo{
+	right: 440px;
+}
+.following{
+	right: 245px;
+}
+.follower{
+	right: 50px;
+}
+
+.tagline{
+	position: absolute;
+	bottom: 10px;
+	left: 135px;
+	text-align: right;
+}
+
+#infotable .key{
+	font-size: 20px;
+}
+
+#infotable .num{
+	font-size: 15px;
+	color: #b0c4de;
+}
+
+
+.view{
+	position: absolute;
+	bottom: 10px;
+	left: 330px;
+}
+
+.view a{
+	color: #BFAC98
+}
+
+.view a:hover{
+	color: #ddd;
+}
+
+.name{
+	position: absolute;
+	bottom: 35px;
+	left: 135px;
+	font-size: 3em;
+	line-height: -.2em;
+	text-align: left;
+	color: #b0c4de;
+}
+
+#infotable .avatar{
+	width: 70px;
+}
+
+#userheader img{
+	position: absolute;
+	bottom: 10px;
+	left: 55px;
+	height: 70px;
+	width: 70px;
+	border: 1px solid black;
+}
+
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 .info{
 	position: relative;
 	z-index: 2;
@@ -46,14 +281,21 @@ a:hover{
 
 .register{
 	background-color: white;
+<<<<<<< HEAD
+=======
+	border: 1px dashed #b0c4de;
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 0 25px 5px #999;
 	color: #111;
 	display: none;
 	min-width: 450px;
 	padding: 50px 30px;
+<<<<<<< HEAD
 	position: relative;
 	top: 50px;
+=======
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 }
 
 
@@ -98,8 +340,13 @@ form input{
 
 .one-edge-shadow{
 	-webkit-box-shadow: 0 10px 50px -6px black;
+<<<<<<< HEAD
 	   -moz-box-shadow: 0 10px 50px -6px black;
 	        box-shadow: 0 10px 50px -6px black;
+=======
+	-moz-box-shadow: 0 10px 50px -6px black;
+	box-shadow: 0 10px 50px -6px black;
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 }
 
 /* BUTTONS */
@@ -129,6 +376,20 @@ form input{
 	font-family: 'Unica One', cursive;
 }
 
+<<<<<<< HEAD
+=======
+.navbutton{
+	background-color: rgba(191,172,152, 0.4);
+	color: #fff;
+	cursor: pointer;
+	border: 0px;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	font-family: 'Unica One', cursive;
+}
+
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 #signInPageButtons{
 	margin: 20px 0px;
 }
@@ -137,7 +398,11 @@ form input{
 
 /* ROUNDABOUT */
 
+<<<<<<< HEAD
 ul, .roundabout-holder {
+=======
+ul.roundabout-holder {
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 	list-style: none;
 	padding: 0;
 	margin-left: auto;
@@ -146,7 +411,19 @@ ul, .roundabout-holder {
 	height: 13em;
 }
 
+<<<<<<< HEAD
 .roundabout-moveable-item, li {
+=======
+ul.roundabout-holder.full {
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+li.roundabout-moveable-item {
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 	position:absolute;
 	top: 0px;
 	height: 5em;
@@ -154,7 +431,28 @@ ul, .roundabout-holder {
 	margin: -80px auto;
 	text-align: center;
 	cursor: pointer;
+<<<<<<< HEAD
 	opacity: 0.9;
+=======
+	opacity: 0.2;
+}
+
+.controls{
+	position: absolute;
+	width: 100%;
+	left: 200px;
+	margin-top: 10px;
+}
+
+li.roundabout-moveable-item.full img{
+	border: 2px solid black;
+}
+
+li.roundabout-moveable-item span.date{
+	margin: 0;
+	padding: 0;
+	opacity: 0.1;
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 }
 
 li.roundabout-in-focus {
@@ -164,6 +462,15 @@ li.roundabout-in-focus {
 	cursor: default;
 }
 
+<<<<<<< HEAD
+=======
+li.roundabout-in-focus span.date{
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+}
+
+>>>>>>> aa83d0016310e2431fc200f4b14a7719b6dc7aee
 li span {
 	display: block;
 	padding-top: 6em;

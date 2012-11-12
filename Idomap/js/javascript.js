@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
-	  $('.popbox').popbox();
-		
+		/*
       //$('#roundHolder').roundabout();
       //btnNext: ".next"
       //autoplay: true
-      /*
+      
       $('.roundabout-holder li')
 			.bind({
 				"reposition": function() {
@@ -23,6 +22,7 @@ $(document).ready(function() {
 			//$(this).css('top', '0px');
 			})
 		*/
+		
 		$('.roundabout-holder').roundabout({
 			minScale: 0.7,
 			easing: 'easeOutExpo',
@@ -31,12 +31,19 @@ $(document).ready(function() {
 			btnPrev: ".prev",
 			enableDrag: true,
 			autoplay: true,
-			duration: 1600
+			duration: 1000
 		});
+		
+		$("#register").validator();
+		
+		$(".register input[required='required']").after(" <span style='color:red'>*</span>");
+
 });
 
 window.onload = function() {
 
+		//$.timeliner();
+		
 		$('.control-play').click( function(){
 			if ($(this).hasClass('on')){
 				console.log("was on");
@@ -49,7 +56,7 @@ window.onload = function() {
 				$(this).html("&#9689;");
 			}
 		});
-		
+				
 		$('.button.menu').click( function(){
 			if ($('.signIn').hasClass('on')){
 				$('.signIn').fadeOut('slow', function(){
@@ -72,13 +79,14 @@ window.onload = function() {
 			}
 		});
 		
+		
 		$('#goRegister').click(function() {
 			console.log("pressed register button");
 			$('.register').bPopup({
 				fadeSpeed: 'slow',
 				follow: [false, false], //x, y
-				position: [200, 200], //x, y
-				modalColor: 'black',
+				position: [50, 50], //x, y
+				modalColor: '#b0c4de',
 				modalClose: false,
             	opacity: 0.6,
             	positionStyle: 'fixed'

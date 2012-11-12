@@ -53,11 +53,7 @@
 		<h1>Register</h1>
 		<span class="button bClose"><span>X</span></span>
 		<table>
-		<form id="register" name="register" method="post">
-			<tr>
-				<td>Username:</td>
-				<td><input type="text" name="userName" id="userName" required="required"/></td>
-			</tr>
+		<form id="register" name="register" method="post" action="php/register.php">
 			<tr>
 				<td>First Name:</td>
 				<td><input type="text" name="firstName" id="firstName" required="required"/></td>

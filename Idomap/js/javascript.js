@@ -31,10 +31,9 @@ $(document).ready(function() {
 			btnPrev: ".prev",
 			enableDrag: true,
 			autoplay: true,
-			duration: 1600
+			duration: 1000
 		});
 		
-	
 		$("#register").validator();
 		
 		$(".register input[required='required']").after(" <span style='color:red'>*</span>");
@@ -43,7 +42,7 @@ $(document).ready(function() {
 
 window.onload = function() {
 
-		$.timeliner();
+		//$.timeliner();
 		
 		$('.control-play').click( function(){
 			if ($(this).hasClass('on')){
@@ -86,8 +85,8 @@ window.onload = function() {
 			$('.register').bPopup({
 				fadeSpeed: 'slow',
 				follow: [false, false], //x, y
-				position: [200, 200], //x, y
-				modalColor: 'black',
+				position: [50, 50], //x, y
+				modalColor: '#b0c4de',
 				modalClose: false,
             	opacity: 0.6,
             	positionStyle: 'fixed'

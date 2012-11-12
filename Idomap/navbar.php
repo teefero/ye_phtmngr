@@ -8,7 +8,7 @@
 				</form>
 			</li>
 			<li class="settings">
-				<a>Ketetha Olengue</a>
+				<a href="#personal">Ketetha Olengue</a>
 				<ul>
 					<li><a>Settings</a></li>
 					<li><a>Logout</a></li>
@@ -17,7 +17,7 @@
 		</ul>
 	</div>
 
-		
+
 	<div class="footer">
 		<a>About</a> | 
 		<a>Home</a> |

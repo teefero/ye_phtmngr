@@ -21,37 +21,23 @@
 
 </head>
 <body>
-	<div id="navbar">
-		<ul class="nav">
-			<li class="logo"><a href="">id&#246;map</a></li>
-			<li class="search"><form method="get" action="" class="search">
-					<input maxlength="2048" class="navsearch" value="" lang="en">
-					<input value="Search" id="submitButton" class="navbutton" type="submit">
-				</form>
-			</li>
-			<li class="settings">
-				<a>Ketetha Olengue</a>
-				<ul>
-					<li><a>Settings</a></li>
-					<li><a>Logout</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+	<?php
+		include('navbar.php');
+	?>
 	<div id="userheader">
 		<span class="name">Ketetha Olengue</span>
 		<span class="tagline">16 and Pregnant, hehe</span>
 		<span class="view"><a href="">Timeline</a> | <a href="">Moments</a></span>
 		<img src="http://aux.iconpedia.net/uploads/11296555161076849797.png" id="avatar" alt="avatar"/>
-		<div class="infobox photo">
+		<div class="infobox photobox">
 			<span class="key">PHOTOS</span>
 			<span class="num">309</span>
 		</div>
-		<div class="infobox follower">
+		<div class="infobox followerbox">
 			<span class="key">FOLLOWERS</span>
 			<span class="num">9019</span>
 		</div>
-		<div class="infobox following">
+		<div class="infobox followingbox">
 			<span class="key">FOLLOWING</span>
 			<span class="num">34</span>
 		</div>
@@ -59,85 +45,82 @@
 	</div>
 	
 	<div id="timelineContainer">
-		<span class="controls">
-			<a class="prev"><<</a> | <a class="control-play on">&#9689;</a> | <a class="next">>></a>
-		</span>
 		<dl class="timelineMinor">
-			<dt id="event01"><a>2012</a></dt>
+			<dt id="event01"><a class='eventname'>2012</a></dt>
 			<dd class="timelineEvent" id="event01EX" style="display: none; ">
 				<p>
+					<span class="controls event01">
+						<a class="prev"><<</a> | <a class="control-play on">&#9689;</a> | <a class="next">>></a>
+					</span>
 					<ul class="roundabout-holder full">
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 21 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 22 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 23 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 24 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 25 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 26 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
-							<span class="date">May, 27 2012</span></li>
 					</ul>
 				</p>
 			</dd><!-- /.timelineEvent -->
 		</dl><!-- /.timelineMinor -->
 		<dl class="timelineMinor">
-			<dt id="event02"><a>2011</a></dt>
+			<dt id="event02"><a class='eventname'>2011</a></dt>
 			<dd class="timelineEvent" id="event02EX" style="display: none; ">
 				<p>
+					<span class="controls event02">
+						<a class="prev"><<</a> | <a class="control-play on">&#9689;</a> | <a class="next">>></a>
+					</span>
 					<ul class="roundabout-holder full">
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 21 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 22 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 23 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 24 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 25 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 26 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
-							<span class="date">May, 27 2012</span></li>
 					</ul>
 				</p>
 			</dd><!-- /.timelineEvent -->
 		</dl><!-- /.timelineMinor -->
 		<dl class="timelineMinor">
-			<dt id="event03"><a>2010</a></dt>
+			<dt id="event03"><a class='eventname'>2010</a></dt>
 			<dd class="timelineEvent" id="event03EX" style="display: none; ">
 				<p>
+					<span class="controls event03">
+						<a class="prev"><<</a> | <a class="control-play on">&#9689;</a> | <a class="next">>></a>
+					</span>
 					<ul class="roundabout-holder full">
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 21 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 22 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 23 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 24 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 25 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
+						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" class="photo"/>
 							<span class="date">May, 26 2012</span></li>
-						<li class="roundable-moveable-item"><img src="img/photo-3.jpg" alt="Idomap logo" class="logo"/>
-							<span class="date">May, 27 2012</span></li>
 					</ul>
 				</p>
 			</dd><!-- /.timelineEvent -->
 		</dl><!-- /.timelineMinor -->
 	</div><!-- /#timelineContainer -->
-	
-	<span class="footer">
-		<a>About</a> | 
-		<a>Home</a> |
-		<a>Settings</a>
-	</span>
+	<?php
+		include('navbar.php')
+	?>
 
 </body>
 </html>

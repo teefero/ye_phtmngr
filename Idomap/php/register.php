@@ -22,7 +22,7 @@
 */
 
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
-	
+
 	if (isset($_POST['firstName'])){
 		$first = $_POST['firstName'];
 		$last = $_POST['lastName'];
@@ -32,9 +32,7 @@
 		$birthMonth = mysql_real_escape_string($_POST['birthMonth']);
 		$sex = $_POST['sex'];
 		$privacy = $_POST['privacy'];
-		
-		echo "sex: $sex";
-		
+
 		$salt = '$2a$13$'.substr(sha1($email),0,22); 
 		$hashed_pass = substr(crypt("$pass", $salt), 32);
 		
@@ -63,7 +61,7 @@
 			//$userProfile->close();
 			//$userInfo->close();
 			
-			//header('Location: ../index.php');
+			header('Location: ../index.php');
 		}			
 		else{
 			header('Location: ../Error.html');			
@@ -71,5 +69,5 @@
 		
 		//$dbh->close();
 	}
-	
+
 ?>
